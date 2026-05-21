@@ -1,0 +1,47 @@
+# Virtual environments
+venv/
+venv310/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw and processed data
+data/raw/
+data/processed/
+
+# Models and saved artifacts
+models/
+*.pkl
+*.sav
+*.h5
+*.keras
+*.joblib
+
+# CatBoost generated files
+catboost_info/
+**/catboost_info/
+learn_error.tsv
+test_error.tsv
+time_left.tsv
+catboost_training.json
+
+# Reports generated locally
+reports/figures/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
+
+reports/
