@@ -74,7 +74,7 @@ data/raw/UCI_Credit_Card.csv
 ## Project Structure
 
 ```text
-credit_card_default_advanced_project/
+credit-risk-scoring/
 │
 ├── data/
 │   ├── raw/                      # raw dataset, ignored by Git
@@ -342,7 +342,7 @@ Python 3.10
 
 Create and activate a virtual environment:
 
-```bash
+```bash 
 py -3.10 -m venv venv310
 venv310\\Scripts\\activate
 ```
