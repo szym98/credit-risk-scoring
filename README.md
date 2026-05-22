@@ -344,7 +344,7 @@ Create and activate a virtual environment:
 
 ```bash 
 py -3.10 -m venv venv310
-venv310\\Scripts\\activate
+venv310\Scripts\activate
 ```
 
 Install dependencies:
@@ -385,6 +385,7 @@ data/raw/
 data/processed/
 models/
 reports/figures/
+reports/*.csv
 catboost_info/
 .ipynb_checkpoints/
 ```
