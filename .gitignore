@@ -1,4 +1,4 @@
-﻿# Virtual environments
+# Virtual environments
 venv/
 venv310/
 .env/
@@ -20,6 +20,9 @@ models/*
 reports/figures/*
 !reports/figures/.gitkeep
 
+# Generated report CSV files
+reports/*.csv
+
 # CatBoost artifacts
 catboost_info/
 
@@ -31,9 +34,3 @@ __pycache__/
 *.pkl
 *.joblib
 *.cbm
-
-# Generated report CSV files
-reports/*.csv
-
-# Generated report CSV files
-reports/*.csv
