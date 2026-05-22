@@ -342,22 +342,31 @@ Python 3.10
 
 Create and activate a virtual environment:
 
-```bash 
+```powershell
 py -3.10 -m venv venv310
 venv310\Scripts\activate
 ```
 
 Install dependencies:
 
-```bash
+```powershell
 python -m pip install --upgrade "pip==25.2" setuptools wheel
 python -m pip install -r requirements.txt
+
+python -m pip install ipykernel
+python -m ipykernel install --user --name credit-risk-scoring --display-name "Python (credit-risk-scoring)"
 ```
 
 Start Jupyter Lab:
 
-```bash
+```powershell
 jupyter lab
+```
+
+In Jupyter Lab, select the kernel:
+
+```text
+Python (credit-risk-scoring)
 ```
 
 Open the notebook:
@@ -371,8 +380,6 @@ Make sure the dataset is available at:
 ```text
 data/raw/UCI_Credit_Card.csv
 ```
-
----
 
 ## GitHub Notes
 
