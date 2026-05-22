@@ -31,3 +31,6 @@ __pycache__/
 *.pkl
 *.joblib
 *.cbm
+
+# Generated report CSV files
+reports/*.csv
