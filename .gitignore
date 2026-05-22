@@ -34,3 +34,6 @@ __pycache__/
 
 # Generated report CSV files
 reports/*.csv
+
+# Generated report CSV files
+reports/*.csv
