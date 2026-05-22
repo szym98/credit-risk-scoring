@@ -34,10 +34,11 @@ Because the cost of errors is asymmetric, the project focuses not only on accura
 In credit risk, a false negative can be especially costly because it means that a risky client is incorrectly treated as safe.
 
 ---
-
 ## Dataset
 
 The project uses the public **Default of Credit Card Clients** dataset.
+
+Dataset source: [Default of Credit Card Clients Dataset on Kaggle](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset)
 
 The dataset contains information about credit card clients, including:
 
@@ -52,24 +53,6 @@ Target variable:
 
 ```text
 default.payment.next.month
-```
-
-Target interpretation:
-
-```text
-0 = no default
-1 = default
-```
-
-The raw dataset is not included in this repository.
-
-To run the project, download the dataset and place it in:
-
-```text
-data/raw/UCI_Credit_Card.csv
-```
-
----
 
 ## Project Structure
 
