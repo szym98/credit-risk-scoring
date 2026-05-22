@@ -34,6 +34,7 @@ Because the cost of errors is asymmetric, the project focuses not only on accura
 In credit risk, a false negative can be especially costly because it means that a risky client is incorrectly treated as safe.
 
 ---
+
 ## Dataset
 
 The project uses the public **Default of Credit Card Clients** dataset.
@@ -53,6 +54,18 @@ Target variable:
 
 ```text
 default.payment.next.month
+```
+
+Target interpretation:
+
+```text
+0 = no default
+1 = default
+```
+
+The raw dataset is not included in this repository.
+
+---
 
 ## Project Structure
 
@@ -75,6 +88,32 @@ credit-risk-scoring/
 ├── requirements.txt
 └── .gitignore
 ```
+
+---
+
+## Project Review
+
+To review the project, open the notebook:
+
+```text
+notebooks/credit_card_default_advanced_final.ipynb
+```
+
+The notebook contains the full machine learning workflow, including:
+
+- exploratory data analysis,
+- data cleaning,
+- feature engineering,
+- model benchmarking,
+- class imbalance handling,
+- multicollinearity analysis,
+- PCA dimensionality reduction,
+- Boruta feature selection,
+- threshold tuning,
+- SHAP explainability,
+- risk segmentation.
+
+The project is intended mainly as a portfolio case study in credit risk analytics, banking analytics and machine learning.
 
 ---
 
@@ -315,62 +354,13 @@ For example:
 
 ---
 
-## How to Run the Project
-
-Recommended Python version:
-
-```text
-Python 3.10
-```
-
-Create and activate a virtual environment:
-
-```powershell
-py -3.10 -m venv venv310
-venv310\Scripts\activate
-```
-
-Install dependencies:
-
-```powershell
-python -m pip install --upgrade "pip==25.2" setuptools wheel
-python -m pip install -r requirements.txt
-
-python -m pip install ipykernel
-python -m ipykernel install --user --name credit-risk-scoring --display-name "Python (credit-risk-scoring)"
-```
-
-Start Jupyter Lab:
-
-```powershell
-jupyter lab
-```
-
-In Jupyter Lab, select the kernel:
-
-```text
-Python (credit-risk-scoring)
-```
-
-Open the notebook:
-
-```text
-notebooks/credit_card_default_advanced_final.ipynb
-```
-
-Make sure the dataset is available at:
-
-```text
-data/raw/UCI_Credit_Card.csv
-```
-
 ## GitHub Notes
 
-The following files and folders should not be committed to GitHub:
+The raw dataset, processed data, trained model artifacts and generated report files are not included in this repository.
+
+These files are ignored by `.gitignore`, including:
 
 ```text
-venv/
-venv310/
 data/raw/
 data/processed/
 models/
@@ -380,9 +370,7 @@ catboost_info/
 .ipynb_checkpoints/
 ```
 
-These paths are handled in `.gitignore`.
-
-The raw dataset and trained model artifacts are not included in the repository.
+The repository is focused on the notebook, project methodology, model results and business interpretation.
 
 ---
 
