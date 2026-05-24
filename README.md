@@ -65,6 +65,12 @@ Target interpretation:
 
 The raw dataset is not included in this repository.
 
+To run the notebook, download the dataset and place it locally as:
+
+```text
+data/raw/UCI_Credit_Card.csv
+```
+
 ---
 
 ## Project Structure
@@ -73,16 +79,10 @@ The raw dataset is not included in this repository.
 credit-risk-scoring/
 │
 ├── data/
-│   ├── raw/                      # raw dataset, ignored by Git
-│   └── processed/                # processed data, ignored by Git
+│   
 │
 ├── notebooks/
 │   └── credit_card_default_advanced_final.ipynb
-│
-├── models/                       # saved model artifacts, ignored by Git
-│
-├── reports/
-│   └── figures/                  # generated charts, ignored by Git
 │
 ├── README.md
 ├── requirements.txt
@@ -356,21 +356,34 @@ For example:
 
 ## GitHub Notes
 
-The raw dataset, processed data, trained model artifacts and generated report files are not included in this repository.
+The raw dataset and generated local artifacts are not included in this repository.
 
-These files are ignored by `.gitignore`, including:
+The repository is focused on:
+
+- the final notebook,
+- project methodology,
+- model comparison,
+- threshold tuning,
+- SHAP explainability,
+- risk segmentation,
+- and business interpretation.
+
+The dataset should be downloaded separately and placed locally in:
+
+```text
+data/raw/UCI_Credit_Card.csv
+```
+
+Some local files and folders are ignored by `.gitignore`, including:
 
 ```text
 data/raw/
 data/processed/
 models/
-reports/figures/
-reports/*.csv
+reports/
 catboost_info/
 .ipynb_checkpoints/
 ```
-
-The repository is focused on the notebook, project methodology, model results and business interpretation.
 
 ---
 
