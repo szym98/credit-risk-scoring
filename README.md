@@ -63,22 +63,12 @@ Target interpretation:
 1 = default
 ```
 
-The raw dataset is not included in this repository.
-
-To run the notebook, download the dataset and place it locally as:
-
-```text
-data/raw/UCI_Credit_Card.csv
-```
-
----
 
 ## Project Structure
 
 ```text
 credit-risk-scoring/
 │
-├── data/
 │   
 │
 ├── notebooks/
