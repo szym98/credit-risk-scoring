@@ -1,21 +1,19 @@
+
+
 # Credit Risk Scoring & Default Risk Segmentation
 
 ## Project Overview
 
-This project develops a **business-oriented credit risk scoring pipeline** for predicting whether a credit card client is likely to default in the next month.
+This project presents an end-to-end credit risk scoring pipeline for predicting whether a credit card client is likely to default in the next month.
 
-The goal is not only to build a classification model, but also to translate model probabilities into practical business outputs such as:
+The goal was to build a classification model and turn its predicted probabilities into practical business outputs, such as:
 
-- credit default risk scores,
+- default risk scores,
 - decision thresholds,
 - customer risk bands,
 - risk deciles,
 - model explainability,
-- and business recommendations for credit analyst review.
-
-This makes the project closer to a real **banking / credit risk analytics** use case rather than a simple machine learning benchmark.
-
----
+- business recommendations for credit analyst review.
 
 ## Business Problem
 
